@@ -21,3 +21,21 @@ for (var i = 2; i >= 0; i--) {
 } 
 alert(`O número pensado era ${numero}!`);
 
+
+
+Usando um número randômico:
+
+var numero = Math.floor(Math.random() * (10 - 0 + 1));
+var numTentativa = ""
+
+for (var i = 2; i >= 0; i--) {
+   numTentativa = prompt('Adivinha o número que estou pensando: de 0 a 10');
+  if (numero == numTentativa) {
+    alert('Você acertou!');
+    break;
+  } else {
+    alert(`Voce errou! Você tem mais ${i} tentativa(s)`);
+     }
+} 
+alert(`O número pensado foi ${numero}!`);
+
