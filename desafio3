@@ -31,10 +31,10 @@ if (desejo == 1) {
 }
 
 
-var tecnologiaPerg = prompt('Tem mais alguma tecnologia que você gostaria de aprender?');
+var tecnologiaPerg = prompt('Tem mais alguma tecnologia que você gostaria de aprender? Se sim, digite ok!');
                         
-while (tecnologiaPerg == 'sim') {
+while (tecnologiaPerg === 'ok') {
   var tecnologiaResp = prompt('Quais são as tecnologias nas quais a pessoa gostaria de se especializar ou de conhecer?');
-  alert(`Você gostaria de aprender ${tecnologiaResp}`);
+  alert(`${tecnologiaResp} é muito massa`);
   tecnologiaPerg = prompt('Tem mais alguma tecnologia que você gostaria de aprender?');
  }
