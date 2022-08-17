@@ -1,0 +1,58 @@
+/*
+ ...você deve criar um programa em Javascript que perguntará se você deseja adicionar uma comida na sua lista de compras, e você deve poder responder com sim ou não.
+
+Em seguida, ele perguntará qual comida você deseja inserir, e você digitará o nome dela, como por exemplo batata.
+
+Depois, ele deverá perguntar em qual categoria essa comida se encaixa, com algumas opções já pré-definidas, como frutas, laticínios, congelados, doces e o que mais você achar interessante. Assim, você poderá separar tudo no seu devido grupo.
+
+Por fim, caso você não queira mais adicionar nada na lista de compras e responder não na primeira pergunta, ele irá exibir uma lista com todos os itens agrupados, da seguinte forma:
+
+Caso você adicione na sua lista:
+banana, leite em pó, tomate, leite vegetal, chiclete, bala de ursinho, maçã, uva, abacate e leite de vaca
+
+O programa deverá imprimir, por exemplo:
+
+Lista de compras:
+    Frutas: banana, tomate, maçã, uva, abacate
+    Laticínios: leite vegetal, leite de vaca, leite em pó
+    Congelados:
+    Doces: chiclete e bala de ursinho
+*/
+
+
+let hortifrut = [];
+let carnes = [];
+let padaria = [];
+let mercearia = [];
+let limpeza = [];
+
+let escolha = 'sim';
+
+while(escolha == 'sim') {
+  escolha = prompt('Você deseja adicionar algum item na lista de compras? Sim ou Nao?');
+  
+if (escolha != 'sim') {
+break;
+}
+  
+ var item = prompt('Qual item você deseja incluir?');
+ var lista = prompt('Em qual categoria o item se encaixa? \n Digite 1 para Hortifrut \n Digite 2 para Carnes \n Digite 3 para Padaria \n Digite 4 para Mercearia \n Digite 5 para Limpeza');
+
+  if (lista == 1) {
+  hortifrut.push(item);
+} 
+   if (lista == 2) {
+  carnes.push(item);
+} 
+   if (lista == 3) {
+  padaria.push(item);
+} 
+   if (lista == 4) {
+  mercearia.push(item);
+} 
+   if (lista == 5) {
+  limpeza.push(item);
+} 
+   
+} 
+alert(`Sua lista de compras: \n Hortifrut: ${hortifrut} \n Carnes: ${carnes} \n Padaria: ${padaria} \n Mercearia: ${mercearia} \n Limpeza: ${limpeza}`);
